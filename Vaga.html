@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Vagas</title>
     <link rel="stylesheet" href="css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,25 +23,10 @@
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <style>
                     @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
-                    
-                    </style> 
-                    <script>
-                      
-function validarDados(){
-            var email = document.getElementById("exampleDropdownFormEmail2");
-            var senha = document.getElementById("exampleDropdownFormPassword2");
-
-            if(email.value == ""){
-                alert("O campo email não está preenchido");
-            }
-
-            if(senha.value == ""){
-                alert("O campo senha não está preenchido");
-            }
-          }
-                    </script>
-              <div class="container-fluid">
-                
+                   
+                    </style>
+               <div class="container-fluid">
+            
                 <a class="navbar-brand" href="#" style="font-family: 'Fira Code', monospace; color: black;">EstagiDev</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -75,6 +60,7 @@ function validarDados(){
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="Avaliação.html">Avaliação</a></li>
                         <li><hr class="dropdown-divider"></li>
+              
                       </ul>
                     </li>
                   </ul>
@@ -98,71 +84,85 @@ function validarDados(){
                 </nav>
             </div>
           </div>
-        <div class="container text-center" style="background-color: #1B9AAA;">
-  <div class="row">
-    <div class="col">
-        <p class="fs-3 text-start" style="color: rgb(255, 255, 255);"></p>
-        <p class="fs-3 text-start" style="color: rgb(255, 255, 255);">Login</p>
-    </div>
-  </div>
-</div>
-<div class="container text-start" style="background-color: ghostwhite;">
-  <div class="row">
-    <div class="col">
-        <form class="menu p-4">
-            <div class="mb-3">
-              <label for="exampleDropdownFormEmail2" class="form-label" style="font-size: large;">Digite o Email</label>
-              <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@exemplo.com">
+        <div class="container text-center">
+            <div class="row">
+              <div class="col my-auto">
+                <IMG src="Exemplo-Vaga.png" style="left: 300px; top: 160px; position: absolute" width="250" height="200">
+              </div>
+              <div class="col text-start">
+                 
+                <div class="mb-3 ">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p class="fs-2 text-start" style="color: black;">Nome da Empresa</p>
+                    <p class="fs-3 text-break text-start" style="color: rgb(50, 50, 60);">Descrição da vaga.</p>
+                    
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Portfólio</label>
+                        <input class="form-control" type="file" id="formFile">
+                        <div class="list-group-item">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <strong class="mb-0">Currículo - Front-End</strong>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="alert2" />
+                                        <span class="custom-control-label"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <strong class="mb-0">Currículo - Back-End</strong>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="alert2" />
+                                        <span class="custom-control-label"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>&nbsp;</p>
+                        <button type="button" class="btn btn-primary">Enviar para processo seletivo</button>
+
+                      </div>
+                      
+                  </div>
+                  
+              </div>
+             
             </div>
-            <div class="mb-3">
-              <label for="exampleDropdownFormPassword2" class="form-label"style="font-size: large;">Digite a senha</label>
-              <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="12345">
-            </div>
-            <div class="mb-3">
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                <label class="form-check-label" for="dropdownCheck2">
-                  Lembrar da conta
-                </label>
+          </div>
+ 
+          <div class="container text-start" style="background-color: rgb(255, 255, 255);">
+            <style>
+                .custom-row{
+    
+      background: linear-gradient(
+        to top,
+        #1B9AAA 0%,
+        #1B9AAA 50%,
+        rgb(255, 255, 255) 50%,
+        rgb(255, 255, 255) 100%
+      );
+    } 
+            </style>
+            <div class="row custom-row">
+              <div class="col ">
+                &nbsp;
+                <IMG src="logo.svg" class="img-fluid" width="300" height="300">
+              </div>
+              <div class="col justify-content-start">
+                &NonBreakingSpace;
+                <p><a class="link-opacity-100" href="Contato.html">Contate conosco</a>   &ensp; Venha fazer parte dessa história!</p>
               </div>
             </div>
-            <div class="text-start">
-              <button name="cadastrar" id="cadastrar" onclick="validarDados(); ValidateCpf(cpf); ValidateRg(rg)" class="btn btn-outline-primary">Enviar</button>
-        
-            <a href="Conta.html" class="btn btn-light" role="button">Criar conta</a>
-            
-
-          </form>
-        
-    </div>
-  </div>
-</div>
-      </div>
-      <div class="container text-start" style="background-color: rgb(255, 255, 255);">
-        <style>
-            .custom-row{
-
-  background: linear-gradient(
-    to top,
-    #1B9AAA 0%,
-    #1B9AAA 50%,
-    rgb(255, 255, 255) 50%,
-    rgb(255, 255, 255) 100%
-  );
-} 
-        </style>
-        <div class="row custom-row">
-          <div class="col ">
-            &nbsp;
-            <IMG src="logo.svg" class="img-fluid" width="300" height="300">
           </div>
-          <div class="col justify-content-start">
-            &NonBreakingSpace;
-            <p><a class="link-opacity-100" href="Contato.html">Contate conosco</a>   &ensp; Venha fazer parte dessa história!</p>
-          </div>
-        </div>
-      </div>
-
-      
-</body>
-</html>
+    
+          
+    </body>
+    </html>

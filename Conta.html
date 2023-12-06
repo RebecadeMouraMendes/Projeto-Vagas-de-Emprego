@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conta</title>
     <link rel="stylesheet" href="css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,36 +25,44 @@
                     @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
                     
                     </style> 
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#" style="font-family: 'Fira Code', monospace; color: black;">EstagiDev</a>  
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Candidato
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Perfil</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Área do usuário</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Envio do curriculo</a></li>
-                        </ul>
-                      </li>
-              
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#">Empresas</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#">Anunciar vaga</a>
-                      </li>
+            <div class="container-fluid">
+            
+              <a class="navbar-brand" href="#" style="font-family: 'Fira Code', monospace; color: black;">EstagiDev</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Candidato
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Perfil.html">Perfil</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="Área.html">Área do usuário</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="curriculo.html">Envio do curriculo</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="formulario.html">Formulário</a></li>
                     </ul>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Empresas
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="empresas.html">Empresas Parceiras</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="Avaliação.html">Avaliação</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                    </ul>
+                  </li>
+                </ul>
                     <ul class="nav navbar-nav navbar-right">
                     <form class="d-flex" role="search">
                       <input class="form-control me-2" type="search" placeholder="Busque..." aria-label="Search">
@@ -68,15 +76,49 @@
                           <li class="nav-item">
                             <a class="nav-link" href="Conta.html">Registre</a>
                           </li> 
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Menu</a>
-                          </li> 
+                        
                     </ul>
                   </div>
                 </div>
               </nav>
           </div>
         </div>
+        <script>
+
+function validarDados(){
+            var nom = document.getElementById("nome");
+            var tel = document.getElementById("telefone");
+            var ema = document.getElementById("email");
+            var sen = document.getElementById("senha");
+            var nas = document.getElementById("nascimento");
+            var estado = document.getElementById("estado");
+
+            if(nom.value == ""){
+                alert("O campo nome não está preenchido");
+            }
+
+            if(tel.value == ""){
+                alert("O campo telefone não está preenchido");
+            }
+
+            if(ema.value == ""){
+                alert("O campo email não está preenchido");
+            }
+
+            if(sen.value == ""){
+                alert("O campo senha não está preenchido");
+            }
+
+            if(nas.value == ""){
+                alert("O campo nascimento não está preenchido");
+            }
+
+            if(estado.value == "Selecione o estado"){
+                alert("O campo estado não está preenchido");
+            }
+
+        }
+        </script>
         <div class="container text-center" style="background-color: #1B9AAA;">
   <div class="row">
     <div class="col">
@@ -91,27 +133,27 @@
         <form class="menu p-4">
             <div class="mb-3">
                 <label for="exampleDropdownFormEmail2" class="form-label" style="font-size: large;">Digite o seu nome completo</label>
-                <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Nome">
+                <input type="email" class="form-control" id="nome" placeholder="Nome">
               </div>
               <div class="mb-3">
                 <label for="exampleDropdownFormEmail2" class="form-label" style="font-size: large;">Digite o número de telefone</label>
-                <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="+XX (XX) XXXX-XXXX">
+                <input type="email" class="form-control" id="telefone" placeholder="+XX (XX) XXXX-XXXX">
               </div>
             <div class="mb-3">
               <label for="exampleDropdownFormEmail2" class="form-label" style="font-size: large;">Digite o Email</label>
-              <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@exemplo.com">
+              <input type="email" class="form-control" id="email" placeholder="email@exemplo.com">
             </div>
             <div class="mb-3">
               <label for="exampleDropdownFormPassword2" class="form-label"style="font-size: large;">Digite a senha</label>
-              <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="12345">
+              <input type="password" class="form-control" id="senha" placeholder="12345">
             </div>
             
 
               <div class="mb-3">
                 <label for="exampleDropdownFormEmail2" class="form-label" style="font-size: large;">Digite o ano de nascimento</label>
-                <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="XXXX">
+                <input type="email" class="form-control" id="nascimento" placeholder="XXXX">
               </div>
-              <select class="form-select" aria-label="Default select example">
+              <select class="form-select" aria-label="Default select example" id="estado">
                 <option selected>Digite o estado</option>
                 <option value="AC">AC</option>
                 <option value="AL">AL</option>
@@ -158,7 +200,9 @@
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn btn-outline-primary">Enviar</button>
+            <div class="text-start">
+              <button name="cadastrar" id="cadastrar" onclick="validarDados(); ValidateCpf(cpf); ValidateRg(rg)" class="btn btn-outline-primary">Enviar</button>
+              </div>
 
           </form>
         
@@ -166,5 +210,31 @@
   </div>
 </div>
       </div>
+      <div class="container text-start" style="background-color: rgb(255, 255, 255);">
+        <style>
+            .custom-row{
+
+  background: linear-gradient(
+    to top,
+    #1B9AAA 0%,
+    #1B9AAA 50%,
+    rgb(255, 255, 255) 50%,
+    rgb(255, 255, 255) 100%
+  );
+} 
+        </style>
+        <div class="row custom-row">
+          <div class="col ">
+            &nbsp;
+            <IMG src="logo.svg" class="img-fluid" width="300" height="300">
+          </div>
+          <div class="col justify-content-start">
+            &NonBreakingSpace;
+            <p><a class="link-opacity-100" href="Contato.html">Contate conosco</a>   &ensp; Venha fazer parte dessa história!</p>
+          </div>
+        </div>
+      </div>
+
+      
 </body>
 </html>
