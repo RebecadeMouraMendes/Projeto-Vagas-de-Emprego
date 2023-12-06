@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+ 
+                    </style>
+
+    <script>
+
+      function validarDados(){
+                  var Escolaridade = document.getElementById("exampleDataList");
+                  var Curso = document.getElementById("exampleInputEmail1");
+                  var Período = document.getElementById("examplePeriodo");
+                  var Tipo = document.getElementById("exampleVagas");
+                  var Modalidade = document.getElementById("exampleModalidade");
+                  var inclusão = document.getElementById("exampleDataList");
+      
+                  if(Escolaridade.value == ""){
+                      alert("O campo escolaridade não está preenchido");
+                  }
+      
+                  if(Curso.value == ""){
+                      alert("O campo curso não está preenchido");
+                  }
+      
+                  if(Período.value == ""){
+                      alert("O campo período não está preenchido");
+                  }
+      
+                  if(Tipo.value == ""){
+                      alert("O campo tipo não está preenchido");
+                  }
+      
+                  if(Modalidade.value == ""){
+                      alert("O campo modalidade não está preenchido");
+                  }
+      
+                  if(inclusão.value == ""){
+                      alert("O campo inclusão não está preenchido");
+                  }
+      
+              }
+              </script>
+         <div class="container-fluid">
+            
+          <a class="navbar-brand" href="#" style="font-family: 'Fira Code', monospace; color: black;">EstagiDev</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Candidato
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Perfil.html">Perfil</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Área.html">Área do usuário</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="curriculo.html">Envio do curriculo</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="formulario.html">Formulário</a></li>
+                </ul>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Empresas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="empresas.html">Empresas Parceiras</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Avaliação.html">Avaliação</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                </ul>
+              </li>
+            </ul>
+                <ul class="nav navbar-nav navbar-right">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Busque..." aria-label="Search">
+                  <button class="btn btn-outline-info" type="submit">Pesquisar</button>
+                </form>
+            </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="login.html">Login</a>
+                      </li> 
+                      <li class="nav-item">
+                        <a class="nav-link" href="Conta.html">Registre</a>
+                      </li> 
+                    
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </div>
+    </div>
+    
+            <div class="container text-start">
+            <div class="row">
+              <div class="col">
+              <p>&nbsp;</p>  <h2>Formulário </h2>                  
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-7 text-start">
+                <label for="exampleDataList" class="form-label">Nível de Escolaridade</label>
+                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Todos">
+                <datalist id="datalistOptions">
+                  <option value="Fundamental">
+                  <option value="Médio">
+                  <option value="Superior">
+                  <option value="Técnico">
+                </datalist>          
+              </div>
+            <div class="col-4">
+            </div>
+       
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-7 text-start">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Curso</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>            
+                  </div>
+            <div class="col-4">
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-7 text-start">
+
+                <label for="examplePeriodo" class="form-label">Periodo do curso </label>
+                <input class="form-control" list="datalistPeriodo" id="examplePeriodo" placeholder="Todos">
+                <datalist id="datalistPeriodo">
+                  <option value="A distâcia">
+                  <option value="Integral">
+                  <option value="Matutino">
+                    <option value="Noturno">
+                        <option value="Madrugada">
+                </datalist>          
+              </div>
+            <div class="col-4">
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-7 text-start">
+                <label for="exampleVagas" class="form-label">Tipo de vagas </label>
+                <input class="form-control" list="datalistVagas" id="exampleVagas" placeholder="Todos">
+                <datalist id="datalistVagas">
+                  <option value="Estágio">
+                  <option value="Efetivo">
+                  <option value="Aprediz">
+                </datalist>          
+              </div>
+            <div class="col-4">
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-7 text-start">
+
+                <label for="exampleModalidade" class="form-label">Modalidade </label>
+                <input class="form-control" list="datalistModalidades" id="exampleModalidade" placeholder="Todos">
+                <datalist id="datalistModalidades">
+                  <option value="Presencial">
+                  <option value="Homeoffice">
+                  <option value="Híbrido">
+                </datalist>      
+
+              </div>
+            <div class="col-4">
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-7 text-start">
+                <label for="exampleInclusão" class="form-label">Vaga de inclusão </label>
+                <input class="form-control" list="datalistInclusão" id="exampleDataList" placeholder="Não">
+                <datalist id="datalistInclusão">
+                  <option value="Sim">
+                    <option value="Não">
+                </datalist>          
+              </div>
+            <div class="col-4">
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-7 text-start">
+                <div class="mb-3">
+                    <label for="Valor" class="form-label">Valor minimo (opcional)</label>
+                    <input type="text" class="form-control" id="text" aria-describedby="valor">
+                  </div>              </div>
+            <div class="col-4">
+            </div>
+          </div>
+          <div class="text-start">
+            <button name="cadastrar" id="cadastrar" onclick="validarDados(); ValidateCpf(cpf); ValidateRg(rg)" class="btn btn btn-primary">Cadastrar</button>
+            </div>
+
+              </div>
+              <div class="container text-start" style="background-color: rgb(255, 255, 255);">
+                <style>
+                    .custom-row{
+        
+          background: linear-gradient(
+            to top,
+            #1B9AAA 0%,
+            #1B9AAA 50%,
+            rgb(255, 255, 255) 50%,
+            rgb(255, 255, 255) 100%
+          );
+        } 
+                </style>
+                <div class="row custom-row">
+                  <div class="col ">
+                    &nbsp;
+                    <IMG src="logo.svg" class="img-fluid" width="300" height="300">
+                  </div>
+                  <div class="col justify-content-start">
+                    &NonBreakingSpace;
+                    <p><a class="link-opacity-100" href="Contato.html">Contate conosco</a>   &ensp; Venha fazer parte dessa história!</p>
+                  </div>
+                </div>
+              </div>
+        
+              
+        </body>
+        </html>
